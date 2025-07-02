@@ -1,9 +1,9 @@
 // src/components/CaseStudies.tsx
 
-"use client"; // This component uses hooks, so it must be a client component
+"use client";
 
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
-import AnimatedCounter from './AnimatedCounter'; // Important: This imports the counter component
+import AnimatedCounter from './AnimatedCounter';
 
 const caseStudies = [
   {
@@ -28,14 +28,11 @@ const caseStudies = [
     ],
     imageUrl: '/placeholder-luxe.png'
   },
-];
+]
 
-// Helper function to parse metric strings like "+250%"
 const parseMetric = (metricValue: string) => {
     const numberValue = parseFloat(metricValue.replace(/[^0-9.]/g, ''));
-    // Handle cases where there might be no numbers (e.g., "N/A"), default to 0
     const target = isNaN(numberValue) ? 0 : numberValue;
-    
     const prefix = metricValue.match(/^[^\d.]*/)?.[0] || '';
     const suffix = metricValue.match(/[^0-9.][^0-9.]*$/)?.[0] || '';
     return { target, prefix, suffix };
@@ -50,14 +47,13 @@ const CaseStudies = () => {
             Proven Results, Tangible Growth
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-400" style={{ fontFamily: 'Inter, Open Sans, sans-serif' }}>
-            We don't just promise rankings; we deliver business outcomes.
+            We don&apos;t just promise rankings; we deliver business outcomes.
           </p>
         </div>
 
-        {/* Featured Testimonial */}
         <div className="mt-16 max-w-4xl mx-auto text-center">
           <p className="text-2xl font-medium text-gray-200">
-            "SEOBuddy transformed our online presence. Their data-first approach doubled our organic leads in just six months. An essential partner for growth."
+            &quot;SEOBuddy transformed our online presence. Their data-first approach doubled our organic leads in just six months. An essential partner for growth.&quot;
           </p>
           <div className="mt-8">
             <div className="font-bold text-white text-lg">Jane Doe, CEO of Innovate Inc.</div>
@@ -65,7 +61,6 @@ const CaseStudies = () => {
           </div>
         </div>
 
-        {/* Case Study Cards Grid */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12">
           {caseStudies.map((study) => (
             <div key={study.client} className="group relative flex flex-col bg-gray-800/50 rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/10">
@@ -73,7 +68,6 @@ const CaseStudies = () => {
                 <h3 className="text-sm font-semibold text-green-400 tracking-wider uppercase">{study.industry}</h3>
                 <p className="mt-4 text-2xl font-bold text-white">{study.client}</p>
                 <p className="mt-2 text-gray-400">{study.challenge}</p>
-                
                 <div className="mt-8 border-t border-gray-700 pt-6">
                   <h4 className="text-base font-semibold text-white">Key Results:</h4>
                   <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2">
@@ -94,7 +88,6 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </div>
-
               <div className="bg-gray-700/50 p-4">
                 <a href="#" className="flex items-center justify-between text-green-400 font-semibold">
                   <span>Read Full Case Study</span>

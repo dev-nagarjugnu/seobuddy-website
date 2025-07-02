@@ -63,14 +63,13 @@ const WhyChooseUs = () => {
     <section className="bg-white py-20 sm:py-28">
       <div className="container mx-auto px-6">
         
-        {/* Value Propositions Part */}
         <div className="lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-blue-600" style={{ color: '#1E40AF' }}>Why Partner With Us</h2>
           <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Everything You Need to Dominate the SERPs
           </p>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600 lg:mx-auto">
-            We're more than just an agency; we're your dedicated partner in digital growth.
+            We&apos;re more than just an agency; we&apos;re your dedicated partner in digital growth.
           </p>
         </div>
 
@@ -90,7 +89,6 @@ const WhyChooseUs = () => {
           </dl>
         </div>
 
-        {/* Process Visualization Part */}
         <div className="mt-24 pt-16 border-t border-gray-200">
             <div className="text-center">
                 <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl" style={{ fontFamily: 'Inter, Poppins, sans-serif' }}>

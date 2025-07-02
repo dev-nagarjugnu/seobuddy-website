@@ -14,7 +14,7 @@ export default function ContactPage() {
             <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                We're here to help you grow. Reach out to us through any of the methods below, or fill out the form and we'll get back to you within 24 hours.
+                We&apos;re here to help you grow. Reach out to us through any of the methods below, or fill out the form and we&apos;ll get back to you within 24 hours.
               </p>
               <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
                 <div className="flex gap-x-4">
